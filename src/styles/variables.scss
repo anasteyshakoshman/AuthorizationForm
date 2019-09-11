@@ -1,0 +1,34 @@
+$black: #333;
+$black-5: rgba(51, 51, 51, .05);
+$black-8: rgba(51, 51, 51, .08);
+
+$primary: #ff4c7c;
+$error: #ff1e31;
+$success: #06cf7f;
+$info: #3d5afe;
+$warning: #f5a623;
+
+$cubic-nikitosa: cubic-bezier(.25,.1,.25,1);
+$trans-fast: .15s $cubic-nikitosa;
+$trans: .3s $cubic-nikitosa;
+$trans-semi-slow: .45s $cubic-nikitosa;
+$trans-slow: .6s $cubic-nikitosa;
+$font-family: 'Rubik', sans-serif;
+
+$desktopContainerMinWidth: 960px;
+$desktopContainerMaxWidth: 1600px;
+$desktopHightBound: 2270px;
+$smallDesktopMaxWidth: 1700px;
+$desktopLowBound: 1369px;
+
+$tabletMaxWidth: 879px;
+$tabletMinWidth: 415px;
+$mobileMaxWidth: 414px;
+$mobileSmallMaxWidth: 374px;
+
+$media-desktop: '(min-width: #{$tabletMaxWidth + 1})';
+$media-tablet-desktop: '(min-width: #{$mobileMaxWidth + 1})';
+$media-tablet: '(max-width: #{$tabletMaxWidth})';
+$media-tablet-only: '(max-width: #{$tabletMaxWidth}) and (min-width: #{$mobileMaxWidth + 1})';
+$media-mobile: '(max-width: #{$mobileMaxWidth})';
+$media-mobile-small: '(max-width: #{$mobileSmallMaxWidth})';

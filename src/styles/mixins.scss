@@ -1,0 +1,100 @@
+@import "variables";
+
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+@mixin ellipsis() {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin desktop {
+  @media #{$media-desktop} {
+    @content;
+  }
+}
+
+@mixin tablet-desktop {
+  @media #{$media-tablet-desktop} {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media #{$media-tablet} {
+    @content;
+  }
+}
+
+@mixin tablet-only {
+  @media #{$media-tablet-only} {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media #{$media-mobile} {
+    @content;
+  }
+}
+
+@mixin mobile-small {
+  @media #{$media-mobile-small} {
+    @content;
+  }
+}
+
+@mixin retina {
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) {
+    @content;
+  }
+}
+
+@mixin noselect() {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    @content;
+  }
+  &::-moz-placeholder { /* Firefox 19+ */
+    @content;
+  }
+  &:-ms-input-placeholder { /* IE 10+ */
+    @content;
+  }
+  &:-moz-placeholder { /* Firefox 18- */
+    @content;
+  }
+  &::placeholder {
+    @content;
+  }
+}
+
+@mixin button-reset {
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  outline: 0;
+  background: none;
+  cursor: pointer;
+}

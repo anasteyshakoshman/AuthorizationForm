@@ -1,0 +1,43 @@
+@import "./variables";
+@import "./mixins";
+
+body {
+  font-kerning: auto;
+  font-family: $font-family;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.43;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  color: $black;
+  background-color: #e6e6e6;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.app {
+  min-height: 100%;
+}
+
+input, button, textarea {
+  font-family: $font-family;
+  font-size: 14px;
+  line-height: 1.4;
+  outline: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-appearance: none;
+
+  &::-moz-focus-inner {
+    border: 0;
+  }
+}

@@ -1,0 +1,87 @@
+@import "./variables";
+@import "./mixins";
+
+.auth-page {
+  font-family: $font-family;
+  margin: 0 auto auto;
+  padding: 20px;
+  text-align: center;
+  background-color: dodgerblue;
+  width : 280px;
+  height: 280px;
+  color: white;
+
+  h2 {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: lighter;
+    color: gray;
+  }
+
+  a:link {
+    text-decoration: underline;
+  }
+
+  form, form a {
+    color: gray;
+    margin: 0 auto auto;
+    width : 220px;
+    height: 220px;
+    border-radius: 2px;
+    background-color: white;
+    padding: 3px;
+
+    a {
+      font-size: 10px;
+    }
+
+    p {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+  }
+
+  p, p a {
+    font-size: 8px;
+    color: white;
+    margin-top: 10px;
+  }
+
+  input {
+    width : 175px;
+    height: 20px;
+    font-size: 10px;
+    padding-left: 8px;
+    line-height: 1.4;
+    border-radius: 1px;
+    box-shadow: none;
+    background-color: $black-5;
+    margin: 3px;
+  }
+
+   Button {
+     font-size: 10px;
+     background-color: dodgerblue;
+     width : 175px;
+     height: 20px;
+     margin:  5px;
+     border-radius: 1px;
+     color: white;
+     font-weight: bold;
+   }
+
+  p.loading {
+    color: gray;
+  }
+
+  .error {
+    color: $error;
+    font-size: 10px;
+  }
+}
+
+
