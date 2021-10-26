@@ -9,7 +9,7 @@ import NotFound from './NotFound';
 
 const fontConfig = {
   google: {
-    families: ['Rubik:400,500,700:latin,cyrillic'],
+    families: ['Rubik:400,500,700:latin,cyrillic']
   },
 };
 
