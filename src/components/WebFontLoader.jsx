@@ -9,7 +9,7 @@ class WebFontLoader extends Component {
   };
 
   state = {
-    loaded: false,
+    loaded: false
   };
 
   componentDidMount() {
